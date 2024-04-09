@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#credentialsForm {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#credentialsList {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.credential {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+}
