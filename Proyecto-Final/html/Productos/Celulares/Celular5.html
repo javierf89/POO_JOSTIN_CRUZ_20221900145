@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirtech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/categorias.css">
+
+
+    <style>
+      .star_rating{
+        user-select: none;
+      }
+
+      .star_rating{
+          font-size: 1rem;
+      }
+
+      .star{
+          font-size: 1.15rem;
+          color: #ff9800;
+          background-color: unset;
+          border: none;
+          padding:0%;
+          outline: none !important;
+          box-shadow: none !important;
+      }
+
+      .star:hover{
+          cursor: pointer;
+      }
+
+      td{
+          border: none !important;
+      }
+
+      table{
+          font-size: 1rem;
+      }
+
+      .precioa{
+          height: 50px;
+          font-size: 1rem;
+          margin-bottom: 10px;
+          border-bottom: #E4E7E9 solid;
+          border-width: 1.2px;
+      }
+
+      .blue{
+          color:#2DA5F3;
+      }
+
+      .descuento{
+          font-size: 0.8rem;
+          color: black;
+          padding: 5px 10px;
+          background-color: #EFD33D;
+          border-radius: 3px;
+          margin-left: 10px;
+      }
+
+      .colores{
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          border-color: transparent !important;
+          margin-right: 15px;
+          cursor: pointer;
+          transition: box-shadow 0.3s;
+          
+          
+      }
+      .colores:focus{
+          outline-color: transparent !important;
+          outline-width: none;
+          box-shadow: 0 0 0 3px #FA8232;
+      }
+
+      .gris{
+          background-color: #B1B5B8;
+      }
+
+      .grisClaro{
+          background-color: #DADBDB;
+      }
+
+      .wrapper{
+        padding: 10px;
+          padding-bottom: 10px;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          border-radius: 3px;
+          border: 1px solid #CED4DA;   
+      }
+
+      .wrapper span{
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          cursor: pointer;
+      }
+
+      .wrapper span.num{
+          margin: 0px 18px;
+          pointer-events: none;
+      }
+
+      .wrapper span.minus, span.plus{
+          padding: 0px 8px;
+          font-weight: 500;
+      }
+
+      .carro{
+          font-size: 1rem;
+          width: 100%;
+          height: 100%;
+          color: white;
+          background-color: #FA8232;
+          border-radius: 3px;
+          font-weight: 600;
+          border-color: transparent;
+          cursor: pointer;
+      }
+
+      .compra{
+          border: 2px solid #FA8232;
+          color: #FA8232;
+          border-radius: 3px;
+          background-color: transparent;
+          font-size: 1rem;
+          width: 100%;
+          height: 100%;
+          font-weight: 600;
+          cursor: pointer;
+      }
+
+      .material-symbols-outlined {
+          font-size: 0.9rem;
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+      }
+
+      .carousel-inner{
+          width: 100%;
+          height: 100%;
+          margin-top: 40px;
+      }
+
+      .carousel-item{
+          width: 100%;
+          height: 30%;
+      }
+
+      .carousel-item img {
+          object-fit: cover;
+          width: 100%;
+          height: 150px;
+      }
+
+      .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+
+      .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .accordion-title {
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .accordion-content {
+        display: none;
+        margin-top: 10px;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .contimg{
+        width: 100%; /* Cambia el tamaño del div según tus necesidades */
+        height: 50%; /* Cambia el tamaño del div según tus necesidades */
+        overflow: hidden; /* Esto oculta el contenido que se desborde del div */
+        position: relative; /* Para posicionar la imagen */
+      }
+      .contimg img {
+        position: absolute; /* Posición absoluta para que la imagen no afecte al flujo del documento */
+        width: auto; /* Ancho automático para que la imagen conserve su proporción */
+        height: 100%; /* Altura al 100% para que la imagen se ajuste al contenedor */
+        left: 50%; /* Centra horizontalmente la imagen */
+        top: 50%; /* Centra verticalmente la imagen */
+        transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    }
+
+    .cont{
+        width: 100%; /* Ancho deseado del contenedor */
+        height: 180px; /* Altura deseada del contenedor */
+        overflow: hidden;
+    }
+    .cont img{
+        position: absolute; /* Posición absoluta para que la imagen no afecte al flujo del documento */
+        width: auto; /* Ancho automático para que la imagen conserve su proporción */
+        height: 100%; /* Altura al 100% para que la imagen se ajuste al contenedor */
+        left: 50%; /* Centra horizontalmente la imagen */
+        top: 50%; /* Centra verticalmente la imagen */
+        transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    }
+
+    .cuerpo{
+      text-align: left;
+      
+    }
+    #Descripcion{
+      margin-top: 100px;
+    }
+    
+
+    </style>
+</head>
+<body>
+  <div id="container1">
+
+    <div class="item item-1">Bienvenido a Commerce store</div>
+    <div class="item item-2">Siguenos: </div>
+    <div class="item item-3"> <img  id="twitter" src="/iconos/twitter.png" alt=""></div>
+    <div class="item item-4"><img   id="Faccebok" src="/iconos/facebook.png" alt=""></div>
+    <div class="item item-5"><img   id="Reddit" src="/iconos/pinterest.png" alt=""></div>
+    <div class="item item-6"><img  id="Pinterest" src="/iconos/reddit.png" alt=""></div>
+    <div class="item item-7"><img id="Youtube" src="/iconos/youtube.png" alt=""></div>
+    <div class="item item-8"><img  id="Instagram" src="/iconos/instagram.png" alt=""></div>
+    <div class="item item-9">l</div>
+    <div class="item item-10">
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Ingles</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li class="active">Ingles</li>
+          <li>Español</li>
+          <li>France</li>
+          <li>Italiano</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="item item-11">
+      <button id="btnInicioSesion">Iniciar Sesión</button>
+    </div>
+    <div class="item item-12"></div>
+    
+  </div>
+  <div id="container2">
+      <div class="item item-1">O</div>
+      <div id="CIRTECH" class="item item-2">CIRTECH</div>
+      <div class="item item-3" id="caja">
+          <div id="barra_busqueda">
+              <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?" autocomplete="off">
+              <img src="/iconos/lupa.png" alt="">
+          </div>
+          
+              <ul id="caja_de_busqueda">
+                  <li><a href="/html/Categorias/Categoria_Celular.html"> <img id="lupa-1" src="/iconos/lupa.png" alt="">Celulares</a></li>
+                  <li><a  href="/html/Categorias/Categoria_Laptop.html"> <img id="lupa-2" src="/iconos/lupa.png" alt="">Laptop</a></li>
+                  <li><a  href="/html/Categorias/Categoria_Televisores.html"> <img id="lupa-3" src="/iconos/lupa.png" alt="">Televisores</a></li>
+              </ul>
+         
+      </div>
+      <div class="item item-4">
+        
+          <img id="Carrito" src="/iconos/carrito-de-compras.png" alt="">
+       
+      </div>
+        
+      <div class="item item-5"><img src="/iconos/me-gusta.png" alt=""> </div>
+      <div class="item item-6">  
+        
+          <img id="Perfil" src="/iconos/usuario.png" alt="">
+      </div>
+      <div class="item item-7"></div>
+  </div>
+  <div id="container3">
+      <div class="item item-1">
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Categorias</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">Categorias</li>
+            <li id="Celulare">Celulares </li>
+            <li id="Laptop">Laptop</li>
+            <li id="Televisore">Televisores</li>
+            <li id="Consola">Consolas</li>
+            <li id="Auriculare">Audifonos</li>
+            <li id="Accesorio">Accesorios</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="item item-2"><img   src="/iconos/gps.png" alt="">Seguimiento</div>
+      <div class="item item-3"><img   src="/iconos/centro-de-llamadas.png" alt="">Soporte personalizado</div>
+      <div class="item item-4"><img   src="/iconos/informacion.png" alt="">Necesitas ayuda</div>
+      <div class="item item-5"><img   src="/iconos/llamada-telefonica.png" alt="">+504 32-39-92-91</div>
+  </div>
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <div id="container-fluid" class="container-fluid cuerpo mt-3">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="media">
+                  <div class="row">
+                    <div class="col-5">
+                        <div class="contimg">
+                      <img width="100%" height="50%" id="Celular1" class="mr-3 rounder border img-fluid" >
+                      </div>
+                      <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active cont">
+                              <img class="d-block w-100 img-fluid" id="carrusel1" >
+                            </div>
+                            <div class="carousel-item cont">
+                              <img class="d-block w-100 img-fluid" id="carrusel2" >
+                            </div>
+                            <div class="carousel-item cont">
+                              <img class="d-block w-100 img-fluid" id="carrusel3"  alt="Third slide Responsive image">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                          </button>
+                      </div>
+                    </div>
+                    <div class="media-body col-7">
+                      <h5 class="mt-0">
+                        <div class="star_rating">
+                            <button class="star" >&#9734;</button>
+                            <button class="star" >&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <span class="current_rating">0 de 5</span>
+                            <span class="text-muted">(13,120 opiniones)</span>
+                        </div>
+                        <table class="table table-sm">
+                                <tr>
+                                    <td colspan="2"><h5 id="Nombre1"></h5></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-muted">Sku:</span>  190305 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td id="Disponibilidad"><span class="text-muted">Disponibilidad:</span > </td>                                    
+                                </tr>
+                                <tr>
+                                    <td id="Marca" ><span class="text-muted" >Marca: </span> </td>
+                                    <td><span class="text-muted">Categoria:</span> Dispositivos electronicos</td>                                    
+                                </tr>
+                        </table>
+                        
+                        <div class="precioa"><spam class="blue" id="Descuento1"></spam> <s class="text-muted" id="Precio1"></s> <span class="descuento">25% OFF</span></div>
+                        
+                        <table class="table table-sm">
+                            <tr>
+                                <td>Color</td>
+                                <td>Tamaño</td>
+                            </tr>
+                            <tr>
+                                <td><button class="colores gris"></button> <button class="colores grisClaro"></button></td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Memoria</td>
+                                <td>Almacenamiento</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                                          <option>8</option>
+                                          <option>16</option>
+                                          <option>32</option>
+                                        </select>
+                                      </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                                      </div>
+                                </td>
+                            </tr>
+                        </table>
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="wrapper">
+                                        <span class="minus">-</span> 
+                                        <span id="cuantos" class="num">01</span>
+                                        <span class="plus">+</span>
+                                </div>
+                              </div>
+                              <div class="col-8">
+                                <button id="Carrito1" class="carro">Añadir al carro <span class="material-symbols-outlined">
+                                    shopping_cart
+                                    </span></button>
+                              </div>
+                              
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+                  
+                  </div>
+                  
+                  <div id="Descripcion" class="row">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Descripción</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Información Adicional</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Especificaciones</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Reseña</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <br><h5>Descripción:</h5>
+                        <p id="informacion"></p>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <br><h5>Información adicional:</h5>
+                        <p>El Galaxy A15 cuenta con una cámara principal de alta resolución que captura imágenes nítidas y detalladas, así como una cámara frontal para selfies de calidad. Además, viene con una batería de larga duración que te permite usarlo durante todo el día sin preocuparte por quedarte sin energía.</p>
+                            <!--<li></li>-->
+                        
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <br><h5>Especificaciones principales:</h5>
+                        <ul>
+                          <li>Pantalla: 6.5 pulgadas, HD+</li>
+                          <li>Procesador: Octa-core</li>
+                          <li>Memoria RAM: 4 GB</li>
+                          <li>Almacenamiento interno: 64 GB (ampliable hasta 512 GB con tarjeta microSD)</li>
+                          <li>Cámara principal: 48 MP</li>
+                          <li>Cámara frontal: 8 MP</li>
+                          <li>Batería: 5000 mAh</li>
+                          <li>Sistema operativo: Android 12 con One UI</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <br><h5>Reseña:</h5>
+                        <p>El Samsung Galaxy A15 ofrece un excelente rendimiento y características a un precio asequible. Su pantalla grande es perfecta para ver vídeos y jugar, mientras que su batería de larga duración garantiza que puedas usarlo durante todo el día sin tener que preocuparte por recargarlo. Además, su cámara principal de alta resolución te permite capturar momentos especiales con una calidad excepcional. En resumen, el Galaxy A15 es una excelente opción para aquellos que buscan un smartphone confiable y con un buen rendimiento sin gastar demasiado dinero.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+      
+
+  <footer id="footer" class="text-center text-lg-start text-white" style="background-color: #202425">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Cirtech
+            </h6>
+            <p>
+              Encuentra los mejores productos electrónicos en Cirtech. Te ofrecemos una amplia gama de dispositivos y accesorios para satisfacer tus necesidades tecnológicas.
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+            <p>
+              <a id="Auriculares" class="text-white text-decoration-none">Auriculares</a>
+            </p>
+            <p>
+              <a id="Laptops" class="text-white text-decoration-none">Laptops</a>
+            </p>
+            <p>
+              <a id="Accesorios" class="text-white text-decoration-none">Accesorios</a>
+            </p>
+            <p>
+              <a id="Celulares" class="text-white text-decoration-none">Celulares</a>
+            </p>
+            <p>
+              <a id="Televisores" class="text-white text-decoration-none">Televisores</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Enlaces útiles
+            </h6>
+            <p>
+              <a id="Perfi" class="text-white text-decoration-none">Tu cuenta</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Convertirte en afiliado</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Tarifas de envío</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Ayuda</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+            <p><i class="fas fa-map-marker-alt mr-3"></i> Comayagua, Comayagua, Honduras.</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@cirtech.com</p>
+            <p><i class="fas fa-phone-alt mr-3"></i> +504 9456-5241</p>
+            <p><i class="fas fa-clock mr-3"></i> Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </section>
+      <hr class="my-3">
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3">
+              © 2024 Cirtech. Todos los derechos reservados.
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        const allStars = document.querySelectorAll('.star');
+        let current_rating = document.querySelector('.current_rating')
+
+        allStars.forEach((star, i) => {
+            star.onclick = function () {
+                let current_star_level = i  + 1;
+                current_rating.innerText = `${current_star_level} de 5`
+
+                allStars.forEach((star, j) => {
+                    if (current_star_level >= j + 1)
+                    {
+                        star.innerHTML='&#9733';
+                    } else {
+                        star.innerHTML='&#9734';
+                    }
+                })
+            }
+        })
+
+        const plus = document.querySelector(".plus"),
+         minus = document.querySelector(".minus"),
+         num = document.querySelector(".num");
+        let a =1;
+        plus.addEventListener("click", ()=>{
+            a++;
+            a=(a<10)?"0"+a:a;
+            num.innerText=a;
+        });
+
+        minus.addEventListener("click", ()=>{
+            if(a>1){
+                a--;
+                a= (a<10)? "0" + a:a;
+                num.innerText=a;
+            }
+        });
+
+        
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script>
+      function toggleAccordion(id) {
+        const content = document.getElementById(id);
+        const contents = document.querySelectorAll('.accordion-content');
+        
+        contents.forEach(item => {
+          if (item.id !== id) {
+            item.classList.remove('show');
+          }
+        });
+    
+        content.classList.toggle('show');
+      }
+    </script>
+
+
+    <!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      
+<script type="module" src="/javascript/Productos/Celulares/Celular5.js"></script>
+<script src="/javascript/script.js" type="module"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

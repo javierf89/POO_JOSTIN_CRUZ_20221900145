@@ -1,0 +1,5 @@
+#inputNombreCompleto-1 {
+    background-color: #e9ecef; /* Color de fondo similar a Bootstrap */
+    border: none; /* Eliminar el borde */
+    pointer-events: none; /* Deshabilitar eventos de puntero */
+  }

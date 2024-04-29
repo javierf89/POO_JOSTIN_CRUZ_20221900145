@@ -36,7 +36,7 @@ function agregarCredencial() {
         agregarUsuario.onsuccess = function() {
             console.log("Credencial agregada correctamente a 'usuarios'");
             correoInput.value = '';
-            contrasenaInput.value = '';
+            contraseñaInput.value = '';
         };
 
         agregarUsuario.onerror = function(error) {

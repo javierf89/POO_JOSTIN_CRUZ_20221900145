@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheer" href="/css/leer_perfil.css">
+    
+</head>
+<body>
+  <div id="container1">
+
+    <div class="item item-1">Bienvenido a Commerce store</div>
+    <div class="item item-2">Siguenos: </div>
+    <div class="item item-3"> <img  id="twitter" src="/iconos/twitter.png" alt=""></div>
+    <div class="item item-4"><img   id="Faccebok" src="/iconos/facebook.png" alt=""></div>
+    <div class="item item-5"><img   id="Reddit" src="/iconos/pinterest.png" alt=""></div>
+    <div class="item item-6"><img  id="Pinterest" src="/iconos/reddit.png" alt=""></div>
+    <div class="item item-7"><img id="Youtube" src="/iconos/youtube.png" alt=""></div>
+    <div class="item item-8"><img  id="Instagram" src="/iconos/instagram.png" alt=""></div>
+    <div class="item item-9">l</div>
+    <div class="item item-10">
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Ingles</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li class="active">Ingles</li>
+          <li>Español</li>
+          <li>France</li>
+          <li>Italiano</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="item item-11">
+      <button id="btnInicioSesion">Iniciar Sesión</button>
+    </div>
+    <div class="item item-12"></div>
+    
+  </div>
+  <div id="container2">
+      <div class="item item-1">O</div>
+      <div id="CIRTECH" class="item item-2">CIRTECH</div>
+      <div class="item item-3" id="caja">
+          <div id="barra_busqueda">
+              <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?" autocomplete="off">
+              <img src="/iconos/lupa.png" alt="">
+          </div>
+          
+              <ul id="caja_de_busqueda">
+                  <li><a href="/html/Categorias/Categoria_Celular.html"> <img id="lupa-1" src="/iconos/lupa.png" alt="">Celulares</a></li>
+                  <li><a  href="/html/Categorias/Categoria_Laptop.html"> <img id="lupa-2" src="/iconos/lupa.png" alt="">Laptop</a></li>
+                  <li><a  href="/html/Categorias/Categoria_Televisores.html"> <img id="lupa-3" src="/iconos/lupa.png" alt="">Televisores</a></li>
+              </ul>
+         
+      </div>
+      <div class="item item-4">
+        
+          <img id="Carrito" src="/iconos/carrito-de-compras.png" alt="">
+       
+      </div>
+        
+      <div class="item item-5"><img src="/iconos/me-gusta.png" alt=""> </div>
+      <div class="item item-6">  
+        
+          <img id="Perfil" src="/iconos/usuario.png" alt="">
+      </div>
+      <div class="item item-7"></div>
+  </div>
+  <div id="container3">
+      <div class="item item-1">
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Categorias</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">Categorias</li>
+            <li id="Celulare">Celulares </li>
+            <li id="Laptop">Laptop</li>
+            <li id="Televisore">Televisores</li>
+            <li id="Consola">Consolas</li>
+            <li id="Auriculare">Audifonos</li>
+            <li id="Accesorio">Accesorios</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="item item-2"><img   src="/iconos/gps.png" alt="">Seguimiento</div>
+      <div class="item item-3"><img   src="/iconos/centro-de-llamadas.png" alt="">Soporte personalizado</div>
+      <div class="item item-4"><img   src="/iconos/informacion.png" alt="">Necesitas ayuda</div>
+      <div class="item item-5"><img   src="/iconos/llamada-telefonica.png" alt="">+504 32-39-92-91</div>
+  </div>
+  
+    <div class="container mt-1 px-5 py-5">
+        <div class="container mt-1">
+            <h1 class="display-5 text-muted">Perfil de Usuario</h1>
+        </div>
+        <section>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <img src="/img/defaultPerfil.jpg" alt="Foto" class="rounded-circle img-fluid" style="width: 150px;">
+                                <input type="text" class="form-control" id="inputNombreCompleto" placeholder="Ingrese su nombre completo" disabled>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <button type="button" class="btn btn-primary">Editar Foto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card mb-4">
+                            <form id="miFormulario" class="row g-3 mx-3 mx-3 mt-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="inputNombreCompleto" class="form-label">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="inputNombreCompleto-1" placeholder="Ingrese su nombre completo" disabled>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputUsuario" class="form-label">Usuario</label>
+                                        <input type="text" class="form-control" id="inputUsuario" placeholder="Ingrese su usuario" disabled>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputEmail" class="form-label">E-mail</label>
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Ingrese su e-mail" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="inputPaisRegion" class="form-label">País/Región</label>
+                                        <input type="text" class="form-control" id="inputPaisRegion" placeholder="Ingrese su país/región" disabled>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputCiudad" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese su ciudad" disabled>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputTelefono" class="form-label">Número de Teléfono</label>
+                                        <input type="text" class="form-control" id="inputTelefono" placeholder="Ingrese su número de teléfono" disabled>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <!-- Contenedor de Formulario de Direcciones de Entrega -->
+    <div class="container py-5">
+        <div class="card mb-4">
+            <div class="">
+                <h4 class="px-2 py-2">Dirección de Entrega</h4>
+            </div>
+        </div>
+    
+        <div class="card mb-4">
+            <form id="miFormulario2" class="mx-5 my-5 row g-3">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="inputPais" class="form-label">País/Región</label>
+                        <input type="text" class="form-control" id="inputPais" placeholder="Ingrese su país/región" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDepartamento" class="form-label">Departamento</label>
+                        <input type="text" class="form-control" id="inputDepartamento" placeholder="Ingrese su departamento" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMunicipio" class="form-label">Municipio</label>
+                        <input type="text" class="form-control" id="inputMunicipio" placeholder="Ingrese su municipio" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputColonia" class="form-label">Colonia/Comunidad/Barrio</label>
+                        <input type="text" class="form-control" id="inputColonia" placeholder="Ingrese su colonia/comunidad/barrio" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDireccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese su dirección" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputReferencia" class="form-label">Referencia de dirección</label>
+                        <input type="text" class="form-control" id="inputReferencia" placeholder="Ingrese una referencia de dirección" readonly>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="selectTipoDocumento" class="form-label">Tipo de documento</label>
+                        <select class="form-select" id="selectTipoDocumento" readonly>
+                            <option selected>Selecciona...</option>
+                            <option value="1">DNI</option>
+                            <option value="2">Carnet de identidad</option>
+                            <option value="3">Pasaporte</option>
+                            <option value="4">Licencia de conducir</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputNumeroDocumento" class="form-label">Número de documento</label>
+                        <input type="text" class="form-control" id="inputNumeroDocumento" placeholder="Ingrese su número de documento" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputNombres" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="inputNombres" placeholder="Ingrese su primer nombre" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputApellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="inputApellidos" placeholder="Ingrese sus apellidos" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTelefonoCelular" class="form-label">Teléfono celular</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+504</span>
+                            <input type="text" class="form-control" id="inputTelefonoCelular" placeholder="Ingrese su número de teléfono celular" readonly>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    
+
+  <footer id="footer" class="text-center text-lg-start text-white" style="background-color: #202425">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Cirtech
+            </h6>
+            <p>
+              Encuentra los mejores productos electrónicos en Cirtech. Te ofrecemos una amplia gama de dispositivos y accesorios para satisfacer tus necesidades tecnológicas.
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+            <p>
+              <a id="Auriculares" class="text-white text-decoration-none">Auriculares</a>
+            </p>
+            <p>
+              <a id="Laptops" class="text-white text-decoration-none">Laptops</a>
+            </p>
+            <p>
+              <a id="Accesorios" class="text-white text-decoration-none">Accesorios</a>
+            </p>
+            <p>
+              <a id="Celulares" class="text-white text-decoration-none">Celulares</a>
+            </p>
+            <p>
+              <a id="Televisores" class="text-white text-decoration-none">Televisores</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Enlaces útiles
+            </h6>
+            <p>
+              <a id="Perfi" class="text-white text-decoration-none">Tu cuenta</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Convertirte en afiliado</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Tarifas de envío</a>
+            </p>
+            <p>
+              <a class="text-white text-decoration-none">Ayuda</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+            <p><i class="fas fa-map-marker-alt mr-3"></i> Comayagua, Comayagua, Honduras.</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@cirtech.com</p>
+            <p><i class="fas fa-phone-alt mr-3"></i> +504 9456-5241</p>
+            <p><i class="fas fa-clock mr-3"></i> Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </section>
+      <hr class="my-3">
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3">
+              © 2024 Cirtech. Todos los derechos reservados.
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  
+
+    <!-- Script JavaScript con importaciones -->
+   
+    <script type="module" src="/javascript/leer_perfil.js"></script>
+    <script src="/javascript/script.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

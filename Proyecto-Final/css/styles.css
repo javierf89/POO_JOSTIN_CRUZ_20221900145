@@ -1,0 +1,458 @@
+
+/* Restaurar la fuente original */
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* También podrías aplicarlo a elementos específicos si es necesario */
+#container1,
+#container2,
+#contenedor3,
+.otro-contenedor {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/Fuentes/static/Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#container1 {
+    background-color: white;
+    gap: 5px;
+    padding: 5px;
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#container1 .item {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    display: flex;
+}
+
+#container1 .item-1 {
+    width: 600px;
+    background-color: white;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+#container1 .item-12 {
+    width: 0px;
+    
+}
+
+#container1 .item-2,
+#container1 .item-3,
+#container1 .item-4,
+#container1 .item-5,
+#container1 .item-6,
+#container1 .item-7,
+#container1 .item-8,
+#container1 .item-9,
+#container1 .item-10 {
+    width: 100px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#container1 .item-3,
+#container1 .item-4,
+#container1 .item-5,
+#container1 .item-6,
+#container1 .item-7,
+#container1 .item-8 {
+    width: 40px;
+    background-color: white;
+    justify-content: center;
+    margin-right: 1px; /* Reducido el margen derecho */
+}
+
+#container1 .item-9 {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#container1 .item-10 {
+    width: 50px;
+    margin-right: 20px;
+    margin-left:0px;
+    height: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#container1 .item-11 {
+    width: 140px;
+    margin-right: 5px;
+    margin-left: 10px;
+    height: 5px;
+    margin-top: -10px;
+}
+
+
+/* Estilos para los íconos */
+#container1 .item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dropdown {
+    min-width: 7em;
+    position: relative;
+    margin: 2em;
+    padding: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #fff;
+    color: #2a2f3b;
+    display: flex;
+    cursor: pointer;
+    transition: background 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    border: 1px #fff solid;
+    padding: 1em;
+}
+
+.select-clicked .select {
+    border: 2px #fff solid;
+    box-shadow: none;
+    background: #f0f0f0; /* Cambiar el fondo cuando se hace clic */
+}
+
+.select-clicked .caret {
+    border-top-color: #fff; /* Cambiar el color de la flecha cuando se hace clic */
+}
+
+.select:hover {
+    background: #fff;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #2a2f3b;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #fff;
+    border: 1px #fff solid;
+    border-radius: 0.5em;
+    box-shadow: none;
+    color: #2a2f3b;
+    position: absolute;
+    top: 3em;
+    left: 30%;
+    width: 110%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    max-height: 150px; /* Ajustar la altura máxima del menú desplegable */
+    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #fff;
+    color: #2a2f3b;
+}
+
+.active {
+    background: #fff;
+    color: #2a2f3b;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+    background: #f0f0f0; /* Cambiar el fondo del menú abierto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al menú abierto */
+}
+
+/* container 2*/
+#container2{
+    background-color: #ABE0A7;
+    margin-top: 5px;
+    height: 50px;
+    display: inline-flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#container2 .item-1{
+    text-align: right;
+    width: 186px;
+
+}
+
+#container2 .item-2{
+    text-transform: capitalize;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    margin-top: 16px;
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    left: 0px;
+    color: white;
+}
+#container2 .item-3{
+    margin-top: 8px;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-left: 50px;
+    
+}
+
+#barra_busqueda{
+
+    position: relative;
+    color: #000;
+}
+
+#barra_busqueda input{
+    padding-left: 30px;
+    width:500px;
+    height: 30px;
+    padding-right: 50px;
+    font-size:200;
+    outline: 0;
+    padding: 10px;
+    color: #000;
+}
+#barra_busqueda i {
+    position: absolute;
+    left: 10px; /* Ajusta la posición horizontal del icono */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1000px;
+  }
+#caja_de_busqueda{
+    position: fixed;
+    top:95px;
+    left: 55.5%;
+    transform: translateX(-60%);
+    display: block;
+    font-size: 23px;
+    text-align: center;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px;
+    max-height: 400px; /* Altura máxima de la lista de resultados */
+    overflow-y: auto; /* Agregar desplazamiento vertical si la lista es larga */
+    width: 525px;
+    
+    z-index: 1;
+    
+}
+#caja_de_busqueda li{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-left: 40px;
+}
+#caja_de_busqueda  li a{
+    color: black; 
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+   
+}
+#caja_de_busqueda img{
+    position: absolute;
+    right: 490px; /* Ajusta este valor según tu diseño */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; /* Ajusta la altura según el tamaño de tu imagen */
+    z-index: 1; /* Asegúrate de que la imagen esté por encima del input */
+    text-align: center;
+    align-items: center;
+    
+}
+
+#lupa-1,
+#lupa-2,
+#lupa-3
+{
+    margin-top:19px;
+    
+}
+
+#caja_de_busqueda li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+#container2 .item-4
+{
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px; /* Reducido el margen derecho */
+    margin-left: 170px;
+    margin-top:auto;
+    padding: 5px;
+}
+
+#container2 .item-5,
+#container2 .item-6
+{
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px; /* Reducido el margen derecho */
+    padding: 5px;
+    margin-top: auto;
+    margin-left: 1px;
+}
+
+#container2 .item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#barra_busqueda img{
+
+    position: absolute;
+    top: 40%;
+    right: 10px; /* Ajusta este valor según tu diseño */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; /* Ajusta la altura según el tamaño de tu imagen */
+    z-index: 1; /* Asegúrate de que la imagen esté por encima del input */
+}
+
+#container3{
+    margin-top: 28px;
+   
+    display: inline-flex;
+    width: 100%;
+    color: #5F6C72;
+}
+#container3 .item {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    display: flex;
+}
+#container3 .item-1,
+#container3 .item-2,
+#container3 .item-3,
+#container3 .item-4,
+#container3 .item-5{
+    width: 200px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+#container3 .item-1{
+    width: 450px;
+    margin-left: 40px;
+    margin-right: 0px;
+    
+}
+#container3 .item-2{
+
+    width: 50px;
+  
+    margin-left: 0px;
+    margin-right: 50px;
+}
+#container3 .item-3{
+    width: 220px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#container3 .item-4{
+
+ 
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#container3 .item-5{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+#container3 .item img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
+}
+#container3 .item-1 .dropdown{
+    width: 220px;
+}
+#container3 .item-1 .dropdown .select{
+    background-color: #F2F4F5;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+a{all: unset;}
+
+#btnInicioSesion {
+    margin-top: 4px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    width: 150px;
+    height: 40px;
+}
+
+/* Estilos para cuando el cursor está sobre el botón */
+#btnInicioSesion:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+}
+
+#footer{
+    margin-top: 50px;
+  }

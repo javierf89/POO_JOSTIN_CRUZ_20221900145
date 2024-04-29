@@ -1,0 +1,214 @@
+.star_rating{
+    user-select: none;
+  }
+
+  .star_rating{
+      font-size: 1rem;
+  }
+
+  .star{
+      font-size: 1.15rem;
+      color: #ff9800;
+      background-color: unset;
+      border: none;
+      padding:0%;
+      outline: none !important;
+      box-shadow: none !important;
+  }
+
+  .star:hover{
+      cursor: pointer;
+  }
+
+  td{
+      border: none !important;
+  }
+
+  table{
+      font-size: 1rem;
+  }
+
+  .precioa{
+      height: 50px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      border-bottom: #E4E7E9 solid;
+      border-width: 1.2px;
+  }
+
+  .blue{
+      color:#2DA5F3;
+  }
+
+  .descuento{
+      font-size: 0.8rem;
+      color: black;
+      padding: 5px 10px;
+      background-color: #EFD33D;
+      border-radius: 3px;
+      margin-left: 10px;
+  }
+
+  .colores{
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      border-color: transparent !important;
+      margin-right: 15px;
+      cursor: pointer;
+      transition: box-shadow 0.3s;
+      
+      
+  }
+  .colores:focus{
+      outline-color: transparent !important;
+      outline-width: none;
+      box-shadow: 0 0 0 3px #FA8232;
+  }
+
+  .gris{
+      background-color: #B1B5B8;
+  }
+
+  .grisClaro{
+      background-color: #DADBDB;
+  }
+
+  .wrapper{
+    padding: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #CED4DA;   
+  }
+
+  .wrapper span{
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      cursor: pointer;
+  }
+
+  .wrapper span.num{
+      margin: 0px 18px;
+      pointer-events: none;
+  }
+
+  .wrapper span.minus, span.plus{
+      padding: 0px 8px;
+      font-weight: 500;
+  }
+
+  .carro{
+      font-size: 1rem;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background-color: #FA8232;
+      border-radius: 3px;
+      font-weight: 600;
+      border-color: transparent;
+      cursor: pointer;
+  }
+
+  .compra{
+      border: 2px solid #FA8232;
+      color: #FA8232;
+      border-radius: 3px;
+      background-color: transparent;
+      font-size: 1rem;
+      width: 100%;
+      height: 100%;
+      font-weight: 600;
+      cursor: pointer;
+  }
+
+  .material-symbols-outlined {
+      font-size: 0.9rem;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
+
+  .carousel-inner{
+      width: 100%;
+      height: 100%;
+      margin-top: 40px;
+  }
+
+  .carousel-item{
+      width: 100%;
+      height: 30%;
+  }
+
+  .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+  }
+
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  .accordion {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .accordion-title {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .accordion-content {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .contimg{
+    width: 100%; /* Cambia el tamaño del div según tus necesidades */
+    height: 50%; /* Cambia el tamaño del div según tus necesidades */
+    overflow: hidden; /* Esto oculta el contenido que se desborde del div */
+    position: relative; /* Para posicionar la imagen */
+  }
+  .contimg img {
+    position: absolute; /* Posición absoluta para que la imagen no afecte al flujo del documento */
+    width: auto; /* Ancho automático para que la imagen conserve su proporción */
+    height: 100%; /* Altura al 100% para que la imagen se ajuste al contenedor */
+    left: 50%; /* Centra horizontalmente la imagen */
+    top: 50%; /* Centra verticalmente la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+}
+
+.cont{
+    width: 100%; /* Ancho deseado del contenedor */
+    height: 180px; /* Altura deseada del contenedor */
+    overflow: hidden;
+}
+.cont img{
+    position: absolute; /* Posición absoluta para que la imagen no afecte al flujo del documento */
+    width: auto; /* Ancho automático para que la imagen conserve su proporción */
+    height: 100%; /* Altura al 100% para que la imagen se ajuste al contenedor */
+    left: 50%; /* Centra horizontalmente la imagen */
+    top: 50%; /* Centra verticalmente la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+}
+
+.cuerpo{
+  text-align: left;
+  
+}
+#Descripcion{
+  margin-top: 100px;
+}
+

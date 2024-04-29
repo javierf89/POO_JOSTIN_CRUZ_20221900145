@@ -1,0 +1,86 @@
+body {
+        font-family: Arial, sans-serif;
+}
+.container {
+        width: 300px;
+        margin: 50px auto;
+}
+input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 16px;
+}
+input[type="button"] {
+        width: 48%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 5px;
+}
+#historial {
+        margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Gris claro */
+}
+
+.container {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #ffffff; /* Blanco */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+input[type="text"] {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc; /* Gris claro */
+  border-radius: 5px;
+}
+
+input[type="button"] {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  background-color: #4c82af; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #4566a0; /* Verde más oscuro al pasar el ratón */
+}
+
+#historial {
+  margin-top: 20px;
+}
+
+#historial h3 {
+  color: #333333; /* Gris oscuro */
+}
+
+#historial-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#historial-list li {
+  padding: 5px;
+  border-bottom: 1px solid #cccccc; /* Gris claro */
+}
+
+#historial-list li:last-child {
+  border-bottom: none; /* No hay borde en el último elemento */
+}
+h1{
+  text-align: center;
+}

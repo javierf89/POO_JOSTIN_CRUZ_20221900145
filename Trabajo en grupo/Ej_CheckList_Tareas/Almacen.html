@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css" type="text/css" media="all">
+<script src="funciones.js" ></script>
+<title>Lista de Tareas</title>
+<style>
+    .completed {
+        text-decoration: line-through;
+    }
+</style>
+</head>
+<body>
+<h1 class="titulo">Lista de Tareas</h1>
+<input type="text" id="taskInput" placeholder="Ingrese una tarea">
+<button onclick="addTask()">Agregar Tarea</button>
+
+<h2>Tareas Pendientes</h2>
+<ul id="pendingTasks"></ul>
+
+<h2>Tareas Realizadas</h2>
+<ul id="completedTasks"></ul>
+
+<h2>Papelera de Reciclaje</h2>
+<ul id="recycleBin"></ul>
+</body>
+</html>

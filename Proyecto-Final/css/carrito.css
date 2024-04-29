@@ -1,0 +1,16 @@
+.container-2{margin-top: 50px;} #cart-table {
+  width: 70%; /* Ancho de la tabla */
+  margin: auto; /* Centrar la tabla */
+}
+
+/* Estilos para las celdas de la tabla */
+#cart-table th,
+#cart-table td {
+  padding: 8px; /* Espaciado interno */
+}
+
+/* Estilos para el botón */
+#eliminar-producto {
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de fuente */
+}

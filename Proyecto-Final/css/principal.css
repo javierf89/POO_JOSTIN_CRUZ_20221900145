@@ -1,0 +1,241 @@
+#container4{    
+    display: flex;
+    margin: 0%;
+}
+
+
+.slider-container {
+    width: 570px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 400px;
+    
+  }
+  
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width:100px ;
+    
+  }
+
+  
+.slide {
+    flex: 0 0 auto;
+    
+    
+  }
+.slider-container .card {
+    
+    border: none;
+  }
+.card {
+    width: 570px; /* Ancho de la tarjeta */
+   
+  }
+
+
+/*card 1*/
+
+
+#card-1 .h2{
+  margin-left: 25px;
+  font-size: 40px;
+  
+}
+#card-1{
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: white;
+  background: #757f8b81;
+  padding-top: 5px;
+  border-radius: 10px;
+
+  }
+#computadora{
+    width: 30%;
+    height: 35%;
+    Margin-left:350px;
+    margin-top: -80px;
+}
+#card-1 .descripcion{
+    width: 300px;
+    height: 100px;
+    
+    
+    margin-top: 10px;
+  
+}
+.button_lenovo, .button_ps5, .button_phone15{
+  margin-top:-60px;
+  width:200px ;
+  margin-left: 50px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  background: #FA8232;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.button_flidbudspro{
+  margin-top:-80px;
+  width:140px ;
+  margin-left: 190px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  font-size: 15px;
+  background: #FA8232;
+  height: 50px;
+  border-radius: 10px;
+  
+}
+
+#button_prom{
+  
+  width:140px ;
+  
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  font-size: 15px;
+  background: #007bff;
+  height: 50px;
+  border-radius: 10px;
+  
+}
+
+#tarjeta1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.producto-1, .producto-2, .producto-3  {
+    
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: -65px;
+  margin-left: 10px;
+  height: 50px;
+ 
+  }
+
+  .producto-4{
+  
+    padding: 10px;
+    width: 100px;
+    margin-top: -250px;
+    margin-left: 180px;
+    height: 50px;
+    
+  }
+  
+.precio {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.img_ps5{ width: 100%; height: 310px; border-radius: 10px;}
+
+/*card 2*/
+#container4 .item-2 {
+ 
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  flex-wrap: wrap;
+  width: 380px;
+}
+#card-2{
+    height: 371px;
+    border-radius: 10px;
+    display:flex;
+    background-color: #D5F0D3;
+    flex-wrap: wrap;
+
+}
+
+.img_xiaomi{
+  margin-top: 100px;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+#card-2 .h2{
+  margin-left: 0px;
+  margin-top: 90px;
+  font-size: 25px;
+ 
+}
+
+/*container 5------------------------------------------------------------------------------------*/
+
+
+#container5{
+  margin-top: 40px;
+  margin-left: 600px;
+  font-size: 40px;
+}
+
+/* container-6 -----------------------------------------------------------------------*/
+
+#container6{
+
+  display: flex;
+ 
+  width: 1050px;
+}
+
+
+
+#container6 .item-1,
+#container6 .item-2,
+#container6 .item-3,
+#container6 .item-4,
+#container6 .item-5,
+#container6 .item-6
+{
+  margin-left: 15px;
+  width: 180px;
+  border: 3px solid #f0f0f0;
+  padding: 10px; 
+  text-align: center;
+  height: 250px;
+}
+#container6 .item-1 {
+
+  margin-left: 0px;
+}
+
+
+#container6 .item-1 .img-1, 
+#container6 .item-2 .img-2, 
+#container6 .item-3 .img-3, 
+#container6 .item-4 .img-4, 
+#container6 .item-5 .img-5, 
+#container6 .item-6 .img-6
+{
+  text-align: center;
+  margin-top: 10px;
+  width: 140px;
+}
+
+.p1
+{
+  margin-top: 40px;
+}

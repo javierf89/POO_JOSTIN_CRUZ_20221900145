@@ -1,0 +1,99 @@
+#container4{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.container {
+    margin-top: 200px;
+    max-width: 900px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+#registerForm{
+    display: none;
+}
+.form-control-sm {
+    height: 40px ;
+    font-size: 0.875rem ;
+    line-height: 1.5 ;
+    border-radius: 0.2rem ;
+  
+    
+  }
+#boton_inicio,
+#Registrarse
+{
+    text-decoration: none;
+    background: #FA8232;
+    border-radius: 2px;
+    border-color: #FA8232;
+    text-align: center;
+  }
+#boton_inicio{
+  width: 390px;
+  height: 40px;
+  align-items: center ;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  color:white;
+  background: #FA8232;
+  outline: none;
+
+}
+#Registrarse{
+
+  width: 390px;
+  height: 40px;
+  align-items: center ;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  color:white;
+  background: #FA8232;
+  outline: none;
+ 
+}
+#googlelogin-1{
+
+  background-color: white;
+  color: #475156;
+  width: 390px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+}
+#googlelogin-2{
+
+  background-color: white;
+  color: #475156;
+  width: 390px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+}
+#googlelogin-1 .img{
+  width: 20px;
+  height: 20px;
+  margin-right: 70px;
+  margin-top: 3px;
+  border: white;
+}
+#googlelogin-1:hover {
+  background-color: #66b3ff;
+}
+
+#googlelogin-2 .img{
+  width: 20px;
+  height: 20px;
+  margin-right: 70px;
+  margin-top: 3px;
+  border: white;
+}
+#googlelogin-2:hover {
+  background-color: #66b3ff;
+}

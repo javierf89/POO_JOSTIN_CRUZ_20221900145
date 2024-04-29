@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css" ></link>
+<script type="text/javascript" src="funciones.js"></script>
+<title>Calculadora con Historial</title>
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+<div class="container">
+    <input type="text" id="display" readonly>
+    <br>
+    <input type="button" value="1" onclick="addToDisplay('1')">
+    <input type="button" value="2" onclick="addToDisplay('2')">
+    <br>
+    <input type="button" value="3" onclick="addToDisplay('3')">
+    <input type="button" value="4" onclick="addToDisplay('4')">
+    <br>
+    <input type="button" value="5" onclick="addToDisplay('5')">
+    <input type="button" value="6" onclick="addToDisplay('6')">
+    <br>
+    <input type="button" value="7" onclick="addToDisplay('7')">
+    <input type="button" value="8" onclick="addToDisplay('8')">
+    <br>
+    <input type="button" value="9" onclick="addToDisplay('9')">
+    <input type="button" value="0" onclick="addToDisplay('0')">
+    <br>
+    <input type="button" value="+" onclick="addToDisplay('+')">
+    <input type="button" value="-" onclick="addToDisplay('-')">
+    <br>
+    <input type="button" value="*" onclick="addToDisplay('*')">
+    <input type="button" value="/" onclick="addToDisplay('/')">
+    <br>
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="C" onclick="clearDisplay()">
+    
+    <div id="historial">
+        <h3>Historial</h3>
+        <ul id="historial-list"></ul>
+    </div>
+</div>
+
+
+
+</body>
+</html>
