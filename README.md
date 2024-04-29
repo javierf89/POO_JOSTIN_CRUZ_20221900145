@@ -9,3 +9,5 @@ POO:
   https://cirtechonduras.web.app/
   
   https://cirtechonduras.firebaseapp.com/
+
+  4:La carpeta Registrarse es la auth de firabase
