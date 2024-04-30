@@ -13,7 +13,9 @@ https://cirtechonduras.firebaseapp.com/
 
 5:Los integrantes del proyecto final:
 Alma Gámez
+
 José Romero
+
 Jostin Cruz
 
 6:Nuestro proyecto de E-commerce: Permite comprar productos. Todos nuestros productos están directamente en la base de datos para evitar tener que modificar el código. El usuario puede registrarse, iniciar sesión y comprar productos. Para seguir al usuario, utilizamos un ID que colocamos en Firestore para saber qué artículos ha comprado.
