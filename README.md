@@ -12,6 +12,7 @@ https://cirtechonduras.firebaseapp.com/
 4:La carpeta "Registrarse": Corresponde a la autenticación de Firebase.
 
 5:Los integrantes del proyecto final:
+
 Alma Gámez
 
 José Romero
